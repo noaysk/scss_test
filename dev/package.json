@@ -1,14 +1,16 @@
 {
-  "name": "dev",
+  "name": "practice",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css-compaile": "sass ../assets/scss/:../assets/css/",
+    "autoprefix": "postcss --use autoprefixer --replace \"../assets/css/style.css\"",
+    "minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output ../assets/css/ --batch --batch-suffix \".min\" \"../assets/css/style.css\"",
+    "build": "npm-run-all --sequential css-compaile autoprefix minify"
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "devDependencies": {
     "autoprefixer": "^10.4.8",
     "clean-css-cli": "^5.6.1",
