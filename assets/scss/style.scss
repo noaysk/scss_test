@@ -1,0 +1,98 @@
+body {
+  position: relative;
+  main {
+    .txt_of-lines {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+    .txt_of {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .more_link {
+      color: #2b6bc0;
+
+      &::after {
+        content: "";
+        background-size: contain;
+        background-image: url("../../img/icon-arrow_right_bl.svg");
+        width: 6px;
+        height: 10px;
+        display: inline-block;
+        margin-left: 5px;
+      }
+    }
+    p.btn {
+      a {
+        margin: 0 auto;
+        color: #fff;
+        font-size: 1.5rem;
+        position: relative;
+        padding: 10px 38px;
+        display: block;
+        text-align: center;
+        border-radius: 5px;
+        background-color: #2b6bc0;
+
+        &::after {
+          content: "";
+          background-size: contain;
+          background-image: url("../../img/icon-arrow_under_wt.svg");
+          width: 9px;
+          height: 6px;
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          transform: translateY(-50%);
+        }
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+    button.btn {
+      margin: 0 auto;
+      max-width: 200px;
+      color: #fff;
+      font-size: 1.5rem;
+      position: relative;
+      padding: 10px 38px;
+      display: block;
+      text-align: center;
+      border-radius: 5px;
+      background-color: #2b6bc0;
+      &::after {
+        content: "";
+        background-size: contain;
+        background-image: url("../../img/icon-arrow_under_wt.svg");
+        width: 9px;
+        height: 6px;
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+      }
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    .select {
+      select {
+        border: 1px solid #e2e2e2;
+        border-radius: 4px;
+        background-color: #fff;
+        width: 130px;
+        padding: 7px 10px;
+        position: relative;
+        background-image: url("../../img/icon-arrow_under_gy.svg");
+        background-repeat: no-repeat;
+        background-size: 9px 6px;
+        background-position: right 10px center;
+      }
+    }
+  }
+}
+
