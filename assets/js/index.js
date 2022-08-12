@@ -1,22 +1,29 @@
-$(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1000,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
+$('.logo-slider').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    infinite: true,
+    responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 4,
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 467,
+          settings: {
+            slidesToShow: 2,
+          }
+        }
+      ]
 });
