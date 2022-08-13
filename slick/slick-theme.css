@@ -41,7 +41,6 @@
   outline: none;
   background: transparent;
 
-  z-index: 5;
 
 }
 .slick-prev:hover,
@@ -90,8 +89,9 @@
 .slick-prev:before {
   content: "<";
   /* mycss */
-  color: #ff8159;
+  color: #ca59ff;
   font-size: 24px;
+  font-weight: bold;
 }
 [dir="rtl"] .slick-prev:before {
   content: "→";
@@ -112,8 +112,10 @@
   content: ">";
 
   /* mycss */
-  color: #ff8159;
+  color: #ca59ff;
   font-size: 24px;
+  font-weight: bold;
+
 }
 [dir="rtl"] .slick-next:before {
   content: "←";
@@ -180,7 +182,7 @@
   /* font-size: 6px; */
 
   /* mycss */
-  font-size: 12px;
+  font-size: 30px;
 
   line-height: 20px;
 
@@ -203,5 +205,5 @@
 .slick-dots li.slick-active button:before {
   opacity: 0.75;
   /* mycss */
-  color: #ff5722;
+  color: #ca59ff;
 }
